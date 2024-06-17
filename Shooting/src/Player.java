@@ -29,7 +29,11 @@ public class Player extends Character implements KeyListener{
 		}
 		if(e.getKeyCode()==KeyEvent.VK_SPACE) {
 			GameWorld.playerBullets.add(
+					new PlayerBullet(x,y,0,-10));
+			GameWorld.playerBullets.add(
 					new PlayerBullet(x,y,10,-10));
+			GameWorld.playerBullets.add(
+					new PlayerBullet(x,y,-10,-10));
 			System.out.println(GameWorld.playerBullets.size());
 		}
 	}
