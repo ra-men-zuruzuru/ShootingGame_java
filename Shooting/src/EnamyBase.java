@@ -23,6 +23,9 @@ public class EnamyBase extends Enemy{
 		if(Math.random()<0.05) {
 			GameWorld.enemies.add(new DoropEnemy(x,y,0,2));
 		}
+		if(Math.random()<0.05) {
+			GameWorld.enemies.add(new CurveEnemy(x,y,0,1.5));
+		}
 	}
 
 }
