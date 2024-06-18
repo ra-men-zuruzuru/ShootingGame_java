@@ -4,7 +4,7 @@ public class EnamyBase extends Enemy{
 		super(x,y,vx,vy);
 	}
 	public void move() {
-		super.move();
+		super.move();//キャラクターから
 		if(x>300)vx=-1;
 		if(x<100)vx=1;
 	}
