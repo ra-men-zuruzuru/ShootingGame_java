@@ -18,7 +18,10 @@ public class GameFrame extends MyFrame {
 			checkPlayerBulletsAndEnemies();
 			if(GameWorld.enemies.size()==0) {
 				setColor(0,0,0);
-				drawString("くりあ",100,200,40);
+				drawString("くりあぁ",100,200,40);
+			}else if(GameWorld.player.y<0) {
+				setColor(0,0,0);
+				drawString("げぇむオーバー",50,200,40);
 			}
 			sleep(0.03);
 		}
