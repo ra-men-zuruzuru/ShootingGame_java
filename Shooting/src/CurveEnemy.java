@@ -19,5 +19,4 @@ public class CurveEnemy extends Enemy {
 			x--;
 		}
 	}
-
 }
