@@ -38,9 +38,6 @@ public class GameFrame extends MyFrame {
 			Enemy e=GameWorld.enemies.get(i);
 			e.draw(this);
 			e.move();
-			if(e.y>500) {
-				GameWorld.enemies.remove(i);
-			}
 		}
 	}
 	
@@ -67,7 +64,7 @@ public class GameFrame extends MyFrame {
 					e.life--;
 				}
 				if(e.life<=0) {
-					GameWorld.enemies.remove(i);
+					GameWorld.enemies.remove(j);
 				}else {
 					j++;
 				}
@@ -80,6 +77,6 @@ public class GameFrame extends MyFrame {
 		}
 	}
 	public boolean checkHit(Character a,Character b) {
-		return Math.abs(a.x-b.x)<=30 && Math.abs(a.y-b.y)<=30; 
+		return Math.abs(a.x-b.x)<=10 && Math.abs(a.y-b.y)<=10; 
 	}
 }
