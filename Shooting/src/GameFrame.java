@@ -38,9 +38,6 @@ public class GameFrame extends MyFrame {
 			Enemy e=GameWorld.enemies.get(i);
 			e.draw(this);
 			e.move();
-			if(e.y>500) {
-				GameWorld.enemies.remove(i);
-			}
 		}
 	}
 	
