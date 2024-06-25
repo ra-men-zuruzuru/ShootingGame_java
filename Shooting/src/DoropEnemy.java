@@ -2,7 +2,7 @@
 public class DoropEnemy extends Enemy {
 	public DoropEnemy(double x,double y,double vx,double vy) {
 		super(x,y,vx,vy);
-		life=1;
+		life=1*GameWorld.stage;
 	}
 	public void draw(MyFrame f) {
 		f.setColor(0, 126, 0);
@@ -12,7 +12,7 @@ public class DoropEnemy extends Enemy {
 	
 	public void move() {
 		super.move();
-		vy+=vx+0.1;
+		vy+=GameWorld.stage*0.5;
 	}
 	
 }

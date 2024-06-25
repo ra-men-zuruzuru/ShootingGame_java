@@ -2,7 +2,7 @@
 public class EnamyBase extends Enemy{
 	public EnamyBase(double x,double y,double vx,double vy) {
 		super(x,y,vx,vy);
-		life=20;
+		life=20*GameWorld.stage;
 		score=10;
 	}
 	public void draw(MyFrame f) {
